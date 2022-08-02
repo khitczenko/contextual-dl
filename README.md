@@ -6,7 +6,9 @@ This directory contains three subdirectories:
 - makeBoxPlots.py: makes the boxplot graphs in the paper (i.e., Figure 2, Figure 4, Figure 5, Figure 6, Figure S2). This script takes as input the result csv files that calculateEMS.py generates (included in results subdirectory)
 - makeLinePlots.py: makes the lineplot graphs in the paper (i.e., Figure 3, Figure S1). This script takes as input the result csv files that calculateEMS.py generates (included in results subdirectory). Note that the measure used (mean/maximum) can be changed on l.26.
 
-2. results: This subdirectory contains the outputs of calculateEMS from the paper (each file is generated using different settings, e.g. how context is defined, how many iterations to run, etc.). These files are used in scripts/makeBoxPlots.py and scripts/makeLinePlots.py. The file naming convention is the following:
+2. data/: This subdirectory contains an example of the datafile headers used as input to calculateEMs. The data we use for the paper come from previously-collected corpora. They are available via request from the researchers who control their distribution. Feel free to get in touch about this!
+
+3. results: This subdirectory contains the outputs of calculateEMS from the paper (each file is generated using different settings, e.g. how context is defined, how many iterations to run, etc.). These files are used in scripts/makeBoxPlots.py and scripts/makeLinePlots.py. The file naming convention is the following:
 
 ContextType_DurationRepresentation_nIter=X_rank=X_Measure_ResultPresentationType_DataSet.csv
 
@@ -36,4 +38,4 @@ ResultPresentationType:
 - nolongvowels: Each row corresponds to the Earthmover's distance calculated between one pair of contexts in the contrastive case (but where long vowels are removed). This is output when nIter = 1.
 - summary: Calculates summary statistics that compare the contrastive and non-contrastive findings in XXX_contrast.csv and XXX_nocontrast.csv. Each row corresponds to one iteration of one corpus size (either contrastive or non-contrastive). It reports summary statistics of that run, which are used for making the lineplots. Note that this file is not output when long vowels are removed.
 
-3. data/: This subdirectory contains an example of the datafile headers used as input to calculateEMs. The data we use for the paper come from previously-collected corpora. They are available via request from the researchers who control their distribution. Feel free to get in touch about this!
+Feel free to reach out to Kasia Hitczenko!
