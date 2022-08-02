@@ -37,5 +37,3 @@ ResultPresentationType:
 - nocontrast: Each row corresponds to the Earthmover's distance calculated between one pair of contexts in the non-contrastive case. This is output when nIter = 1.
 - nolongvowels: Each row corresponds to the Earthmover's distance calculated between one pair of contexts in the contrastive case (but where long vowels are removed). This is output when nIter = 1.
 - summary: Calculates summary statistics that compare the contrastive and non-contrastive findings in XXX_contrast.csv and XXX_nocontrast.csv. Each row corresponds to one iteration of one corpus size (either contrastive or non-contrastive). It reports summary statistics of that run, which are used for making the lineplots. Note that this file is not output when long vowels are removed.
-
-Feel free to reach out to Kasia Hitczenko!
